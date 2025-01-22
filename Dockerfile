@@ -6,7 +6,7 @@ COPY . .
 RUN go build -o main .
 
 FROM alpine:latest
-WORKDIR /gau_validation
+WORKDIR /gau_assistant
 COPY --from=builder /gau_assistant/main .
 EXPOSE 8900
 CMD ["./main"]
