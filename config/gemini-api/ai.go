@@ -1,4 +1,4 @@
-package gemini_assistant
+package gemini_api
 
 import (
 	"bytes"

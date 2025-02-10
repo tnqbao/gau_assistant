@@ -3,12 +3,12 @@ package handlers
 import (
 	"fmt"
 	"github.com/bwmarrin/discordgo"
-	"github.com/tnqbao/gau_assistant/config/gemini-assistant"
+	"github.com/tnqbao/gau_assistant/config/gemini-api"
 	"log"
 )
 
 func HandleCommand(s *discordgo.Session, i *discordgo.InteractionCreate) {
-	aiClient := gemini_assistant.NewAIClient()
+	aiClient := gemini_api.NewAIClient()
 
 	err := s.InteractionRespond(i.Interaction, &discordgo.InteractionResponse{
 		Type: discordgo.InteractionResponseDeferredChannelMessageWithSource,

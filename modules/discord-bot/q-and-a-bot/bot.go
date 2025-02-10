@@ -1,8 +1,8 @@
-package discord_bot
+package q_and_a_bot
 
 import (
 	"github.com/bwmarrin/discordgo"
-	"github.com/tnqbao/gau_assistant/modules/discord-bot/handlers"
+	"github.com/tnqbao/gau_assistant/modules/discord-bot/q-and-a-bot/handlers"
 	"log"
 )
 
