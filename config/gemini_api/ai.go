@@ -41,7 +41,7 @@ func (client *AIClient) GetResponse(input string) (string, error) {
 		"contents": []map[string]interface{}{
 			{
 				"parts": []map[string]string{
-					{"text": input + ", p/s:(trả lời không được vượt quá 1700 kí tự)"},
+					{"text": input},
 				},
 			},
 		},

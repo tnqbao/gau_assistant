@@ -3,11 +3,12 @@ package handlers
 import (
 	"fmt"
 	"github.com/bwmarrin/discordgo"
-	"github.com/tnqbao/gau_assistant/config/gemini-api"
+	"github.com/tnqbao/gau_assistant/config/gemini_api"
 	"log"
 )
 
 func HandleCommand(s *discordgo.Session, i *discordgo.InteractionCreate) {
+
 	aiClient := gemini_api.NewAIClient()
 
 	err := s.InteractionRespond(i.Interaction, &discordgo.InteractionResponse{
